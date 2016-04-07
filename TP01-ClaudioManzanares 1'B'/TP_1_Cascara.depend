@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1458742414 source:f:\tp_1_cascara\tp_1_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"funciones.h"
+	<conio.h>
+
+1458741952 f:\tp_1_cascara\tp_1_cascara\funciones.h
+
+1458834150 source:e:\tp_1_cascara\tp_1_cascara\main.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	"funciones.h"
+	<conio.h>
+
+1458833414 e:\tp_1_cascara\tp_1_cascara\funciones.h
+
+1458835926 source:e:\calculadora claudio Ñey\same as before\main.c
+	<stdio.h>
+	<ctype.h>
+	<windows.h>
+	"funciones.h"
+	<conio.h>
+
+1458838302 e:\calculadora claudio Ñey\same as before\funciones.h
+
