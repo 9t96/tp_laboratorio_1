@@ -29,8 +29,7 @@ int obtenerEspacioLibre(EPersona lista[]);
 
 /** \brief se pide el dni se compara y si hay coincidencia cambia el estado del array a 0
  * \param lista el array se pasa como parametro.
- * \param dni recibe el dni a ser comparado
- * \return retorna el indice del dni
+ * \return no retorna valores
  */
 void borrar_persona(EPersona lista[]);
 
