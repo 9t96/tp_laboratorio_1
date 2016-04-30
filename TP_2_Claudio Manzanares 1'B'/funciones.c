@@ -54,40 +54,29 @@ int obtenerEspacioLibre(EPersona lista[])
     return indice;
 }
 
-int buscarPorDni(EPersona lista[], long int dni)
+void borrar_persona(EPersona lista[])
 {
-    int indice;
+    int indice,flag=0;
+    long int dni;
+    system("cls");
+    printf("Ingrese el DNI de la persona que desea eliminar 'sin comas ni puntos': ");
+    scanf("%ld",&dni);
     for(indice=0;indice<=personas;indice++)
     {
 
         if(dni==lista[indice].dni)
         {
-            return indice;
+            lista[indice].estado=0;
+            flag=1;
+            system("cls");
+            printf("Se limpiaron los datos de %s\n\nPresione una tecla para volver al menu.",lista[indice].nombre);
+            break;
         }
     }
-
-    indice=0;
-    return indice;
-}
-
-void borrar_persona(EPersona lista[])
-{
-    int indice;
-    long int aux_dni;
-    system("cls");
-    printf("Ingrese el DNI de la persona que desea eliminar 'sin comas ni puntos': ");
-    scanf("%ld",&aux_dni);
-    indice=buscarPorDni(lista,aux_dni);
-    if(indice==0)
+    if(indice==personas&&flag!=1)
     {
         system("cls");
         printf("\nError, No se puedo encontrar el DNI vuelva a ingresar\n\nPresione una tecla para volver al menu.");
-    }
-    else
-    {
-        lista[indice].estado=0;
-        system("cls");
-        printf("Se limpiaron los datos de %s\n\nPresione una tecla para volver al menu.",lista[indice].nombre);
     }
 
 }
