@@ -27,14 +27,6 @@ void altas(EPersona lista[]);
  */
 int obtenerEspacioLibre(EPersona lista[]);
 
-/**
- * Obtiene el indice que coincide con el dni pasado por parametro.
- * @param lista el array se pasa como parametro.
- * @param dni el dni a ser buscado en el array.
- * @return el indice en donde se encuentra el elemento que coincide con el parametro dni
- */
-int buscarPorDni(EPersona lista[], long int dni);
-
 /** \brief se pide el dni se compara y si hay coincidencia cambia el estado del array a 0
  * \param lista el array se pasa como parametro.
  * \param dni recibe el dni a ser comparado
