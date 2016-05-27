@@ -214,7 +214,7 @@ int generarPagina(EMovie *movie)
                     "<ul>\n"
                     "<li>Genero:%s</li>\n"
                     "<li>Puntaje:%d</li>\n"
-                    "<li>Duracion:%d</li>\n"
+                    "<li>Duracion:%d minutos</li>\n"
                     "</ul>\n"
                     "<p>%s</p>\n"
                     " </article>\n"
