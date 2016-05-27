@@ -10,7 +10,7 @@ int main()
 
     EMovie movie;
 
-    do
+    while(rta=='s')
     {
         system("cls");
         switch(menu())
@@ -40,6 +40,6 @@ int main()
                 break;
         }
 
-    } while(seguir!='n');
+    }
 return 0;
 }
