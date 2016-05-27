@@ -106,9 +106,8 @@ int agregarPelicula(EMovie* movie)
             getche();
         }
         printf("Se guardo la pelicula.\n\nPresione una tecla para continuar...\n");
-        return 0;
-
         fclose(bin);
+        return 0;
 }
 
 int borrarPelicula(EMovie *movie)
@@ -135,11 +134,9 @@ int borrarPelicula(EMovie *movie)
                    fseek(pointDat,-sizeof(EMovie),SEEK_CUR);
                    movie->estado=0;
                    fwrite(movie,sizeof(EMovie),1,pointDat);
-
-
                    encontro=1;
                    printf("Se borro satisfactoriamente la pelicula!");
-
+                   
                    break;
                }
             }
@@ -246,7 +243,6 @@ int generarPagina(EMovie *movie)
             printf("No se pudo crear el html vuelva a intentarlo.\n\nPresione una tecla para continuar");
             return 0;
         }
-
     }
     else
     {
