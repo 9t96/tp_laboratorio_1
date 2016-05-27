@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1464369884 source:e:\pruebatp3\tp_03 claudio manzanares 1'b'\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+	<conio.h>
+	<string.h>
+	"funciones.h"
+
+1464369884 e:\pruebatp3\tp_03 claudio manzanares 1'b'\funciones.h
+
+1464369910 source:e:\pruebatp3\tp_03 claudio manzanares 1'b'\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	"funciones.h"
+
