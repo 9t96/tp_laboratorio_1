@@ -175,25 +175,16 @@ int generarPagina(EMovie *movie)
     {
         if((pointHtml=fopen("listapeliculas.html","wb"))!=NULL)
         {
-            fprintf(pointHtml,"<!DOCTYPE html>\n"
-            "<!-- Template by Quackit.com -->\n"
+            fprintf(pointHtml,
+            "<!DOCTYPE html>\n"
             "<html lang='en'>\n"
             "<head>\n"
             "    <meta charset='utf-8'>\n"
             "    <meta http-equiv='X-UA-Compatible' content='IE=edge'>\n"
             "    <meta name='viewport' content='width=device-width, initial-scale=1'>\n"
-            "    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->\n"
             "    <title>Lista peliculas</title>\n"
-            "    <!-- Bootstrap Core CSS -->\n"
             "    <link href='css/bootstrap.min.css' rel='stylesheet'>\n"
-            "    <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->\n"
             "    <link href='css/custom.css' rel='stylesheet'>\n"
-            "    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->\n"
-            "    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->\n"
-            "    <!--[if lt IE 9]>\n"
-            "        <script src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js'></script>\n"
-            "        <script src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js'></script>\n"
-            "    <![endif]-->\n"
             "</head>\n"
             "<body>\n"
             "    <div class='container'>\n"
@@ -203,7 +194,7 @@ int generarPagina(EMovie *movie)
 
                if(movie->estado==1)
                {
-                    fprintf(pointHtml,"<!-- Repetir esto para cada pelicula -->\n"
+                    fprintf(pointHtml,
                     "<article class='col-md-4 article-intro'>\n"
                     "<a href='#'>\n"
                     "<img class='img-responsive img-rounded' src='%s' alt=''>\n"
@@ -217,23 +208,17 @@ int generarPagina(EMovie *movie)
                     "<li>Duracion:%d minutos</li>\n"
                     "</ul>\n"
                     "<p>%s</p>\n"
-                    " </article>\n"
-                    "<!-- Repetir esto para cada pelicula -->\n",movie->linkImg,movie->titulo,movie->genero,movie->puntaje,movie->duracion,movie->descripcion);
+                    " </article>\n",movie->linkImg,movie->titulo,movie->genero,movie->puntaje,movie->duracion,movie->descripcion);
                }
 
             }
 
-            fprintf(pointHtml,"        </div>\n"
-            "<!-- /.row -->\n"
+            fprintf(pointHtml,
             "</div>\n"
-            "<!-- /.container -->\n"
-            "<!-- jQuery -->\n"
+            "</div>\n"
             "<script src='js/jquery-1.11.3.min.js'></script>\n"
-            "<!-- Bootstrap Core JavaScript -->\n"
             "<script src='js/bootstrap.min.js'></script>\n"
-            "<!-- IE10 viewport bug workaround -->\n"
             "<script src='js/ie10-viewport-bug-workaround.js'></script>\n"
-            "<!-- Placeholder Images -->\n"
             "<script src='js/holder.min.js'></script>\n"
             "</body>\n"
             "</html>\n");
